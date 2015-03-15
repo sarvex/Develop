@@ -1,0 +1,28 @@
+Device
+Device name: E1750
+Application port: COM104
+Serial number: NJ5TAA1062600864
+IMEI: 359767031506380
+Hardware Version: CD6ATCPU
+Firmware Version: 11.126.13.00.00
+Software Version: 21.005.11.01.850
+
+SIM/USIM
+Own number(MSISDN): Unknown
+Messages in SIM/USIM: 2/20
+Contacts in SIM/USIM: 8/250
+Message center number: +919716099060
+PIN code status: Ready
+
+Network status
+Network name: Aircel
+RSSI: -93dBm
+Cell ID:  2032
+CS network registration: Registered
+PS network registration: Registered
+PS network attachment: Attached
+
+Network settings
+APN: aircelinternet
+Network selection mode: Automatic
+

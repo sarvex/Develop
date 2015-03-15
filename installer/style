@@ -1,0 +1,20 @@
+QScrollBar:horizontal { background: #1a5e9a; color: white; } 
+
+QPushButton { color: white; min-height: 20px; min-width: 70px; background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #004c8f, stop: 1 #1a5e9a); border: 1px solid #004c8f; }
+QPushButton:hover { background-color: #1a5e9a; color: white; min-height: 20px; min-width: 70px; }
+QPushButton:pressed { color: white; min-height: 20px; min-width: 70px; border: 1px solid #c90008; background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #c90008, stop: 1 #e11119); }
+QPushButton:disabled {background-color: #E2E2E2;  color: blue; min-height: 20px; min-width: 70px; border: 1px solid #004c8f; }
+
+QLineEdit { min-height: 20px; }
+
+QToolBar { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #c90008, stop: 1 #e11119); border: 1px solid #c90008;}
+
+QLabel[class="networkDisplayMode"] { color: white; }
+
+QLineEdit[class="serviceLine"] { border: 1px solid #004c8f; }
+
+QTextEdit[class="serviceText"] { border: 1px solid #004c8f; }
+
+QGroupBox { border: 1px solid blue; border-radius: 3px; background-color: white; min-height: 100px; }
+
+QTableWidget QHeaderView::section { spacing: 1px; background-color:#1a5e9a; color: white; border: 1px solid #1a5e9a; margin: 1px; }

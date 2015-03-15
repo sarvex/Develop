@@ -1,0 +1,176 @@
+; Windows XP/Vista/7 Virtual Serial Port Setup File
+; Copyright (c) 2011 Olive Telecom
+; Manufacturer: Olive Telecom
+;
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %Olive%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 07/08/2009,2.0.6.6
+Catalogfile = Oliveusbser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%Olive% = 3GSerialPort, NTia64, NTamd64
+
+[SourceDisksFiles]
+Oliveusbser.sys = 1000
+[SourceDisksNames.x86]
+1000 = %QcomSrcDisk%,"",,\x86
+[SourceDisksNames.amd64]
+1000 = %QcomSrcDisk%,"",,\amd64
+[SourceDisksNames.ia64]
+1000 = %QcomSrcDisk%,"",,\ia64
+
+[3GSerialPort]
+
+%3GDeviceDownload1020%  = QportInstall00, USB\VID_22F4&PID_1020
+%3GDeviceDownload10200%  = QportInstall00, USB\VID_22F4&PID_1020&MI_00
+
+%3GDeviceDiag0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_00
+%3GDeviceNMEA0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_01
+%3GDevicePCUI0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_02
+
+%3GDeviceDiag0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_00
+%3GDeviceNMEA0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_01
+%3GDevicePCUI0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_02
+
+%3GDeviceDiag0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_00
+%3GDeviceNMEA0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_01
+%3GDevicePCUI0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_02
+
+%3GDeviceDiag0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_00
+%3GDeviceNMEA0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_01
+%3GDevicePCUI0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_02
+
+%3GDeviceDiag0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_00
+%3GDeviceNMEA0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_01
+%3GDevicePCUI0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_02
+
+%3GDeviceDiag0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_00
+%3GDeviceNMEA0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_01
+%3GDevicePCUI0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_02
+
+
+
+[3GSerialPort.NTia64]
+%3GDeviceDownload1020%  = QportInstall00, USB\VID_22F4&PID_1020
+%3GDeviceDownload10200%  = QportInstall00, USB\VID_22F4&PID_1020&MI_00
+
+%3GDeviceDiag0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_00
+%3GDeviceNMEA0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_01
+%3GDevicePCUI0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_02
+
+%3GDeviceDiag0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_00
+%3GDeviceNMEA0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_01
+%3GDevicePCUI0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_02
+
+%3GDeviceDiag0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_00
+%3GDeviceNMEA0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_01
+%3GDevicePCUI0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_02
+
+%3GDeviceDiag0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_00
+%3GDeviceNMEA0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_01
+%3GDevicePCUI0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_02
+
+%3GDeviceDiag0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_00
+%3GDeviceNMEA0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_01
+%3GDevicePCUI0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_02
+
+%3GDeviceDiag0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_00
+%3GDeviceNMEA0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_01
+%3GDevicePCUI0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_02
+
+
+
+[3GSerialPort.NTamd64]
+%3GDeviceDownload1020%  = QportInstall00, USB\VID_22F4&PID_1020
+%3GDeviceDownload10200%  = QportInstall00, USB\VID_22F4&PID_1020&MI_00
+
+%3GDeviceDiag0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_00
+%3GDeviceNMEA0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_01
+%3GDevicePCUI0026%  = QportInstall00, USB\VID_22F4&PID_0026&MI_02
+
+%3GDeviceDiag0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_00
+%3GDeviceNMEA0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_01
+%3GDevicePCUI0033%  = QportInstall00, USB\VID_22F4&PID_0033&MI_02
+
+%3GDeviceDiag0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_00
+%3GDeviceNMEA0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_01
+%3GDevicePCUI0034%  = QportInstall00, USB\VID_22F4&PID_0034&MI_02
+
+%3GDeviceDiag0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_00
+%3GDeviceNMEA0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_01
+%3GDevicePCUI0035%  = QportInstall00, USB\VID_22F4&PID_0035&MI_02
+
+%3GDeviceDiag0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_00
+%3GDeviceNMEA0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_01
+%3GDevicePCUI0036%  = QportInstall00, USB\VID_22F4&PID_0036&MI_02
+
+%3GDeviceDiag0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_00
+%3GDeviceNMEA0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_01
+%3GDevicePCUI0037%  = QportInstall00, USB\VID_22F4&PID_0037&MI_02
+
+
+[QportInstall00.NT]
+CopyFiles=QCUsbDriverFiles
+AddReg = All00, AddReg
+
+[QCUsbDriverFiles]
+Oliveusbser.sys
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[QportInstall00.NT.Services]
+AddService=OliveSer,  0x00000002, QC_USBSerialService
+
+[QC_USBSerialService]
+DisplayName   = "Olive DataCard USB Modem and USB Serial"
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %12%\Oliveusbser.sys
+
+[All00]
+HKR,,NTMPDriver,,Oliveusbser.sys
+
+[AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+QCUSBSER = "Olive USB Device for Legacy Serial Communication"
+QcomSrcDisk = "Olive USB Driver Disk"
+Olive   = "Olive Telecom"
+
+3GDeviceDownload1020 = "Olive Download"
+3GDeviceDownload10200 = "Olive Download"
+
+3GDeviceDiag0026 = "Olive Diagnostics"
+3GDeviceNMEA0026 = "Olive Interface"
+3GDevicePCUI0026 = "Olive Voice"
+
+3GDeviceDiag0033 = "Olive Diagnostics"
+3GDeviceNMEA0033 = "Olive NMEA"
+3GDevicePCUI0033 = "Olive PCUI"
+
+3GDeviceDiag0034 = "Olive Diagnostics"
+3GDeviceNMEA0034 = "Olive NMEA"
+3GDevicePCUI0034 = "Olive PCUI"
+
+3GDeviceDiag0035 = "Olive Diagnostics"
+3GDeviceNMEA0035 = "Olive NMEA"
+3GDevicePCUI0035 = "Olive PCUI"
+
+3GDeviceDiag0036 = "Olive Diagnostics"
+3GDeviceNMEA0036 = "Olive NMEA"
+3GDevicePCUI0036 = "Olive PCUI"
+
+3GDeviceDiag0037 = "Olive Diagnostics"
+3GDeviceNMEA0037 = "Olive NMEA"
+3GDevicePCUI0037 = "Olive PCUI"

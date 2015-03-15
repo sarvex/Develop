@@ -1,0 +1,5 @@
+[AutoRun]
+open=autorun.exe
+icon=setup.exe
+label=Olive Telecom
+action=Start Aircel Dialer

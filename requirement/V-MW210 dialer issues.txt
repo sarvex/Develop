@@ -1,0 +1,100 @@
+Home Page:
+
+1) In homepage 121 is not hyperlinked. It should be hyperlinked and should originate call to 121 if user press.-- Link enable but not underline.
+2) Not opening homepage after connect to data. --- Fixed
+ 
+
+--------
+Phonebook
+
+1) current Group info not display in edit window IF user edit any saved contact.		---Fixed
+2) Page not refresh if user switch from Local to SIM/USIM.					-- Fixed
+3) if user Edit and press OK it saved as new entry.						---Dialer crashed every time.
+4) Search function is not operational.								---Fixed
+5) IN right Click menu-> New should bve rename as New Contact.					-- Fixed
+6) IN right click menu-> Edit should be rename as Edit contact.					---Fixed
+7) In right click menu-> Delete should be rename as Delete Contact.				---Fixed
+8) after user press Export , it ask to open. It should ask to save.				---Fixed
+9) function related to SIM not implemented.							---Open
+10) Dialer crashed everytime if edit any contact and save.					---Fixed
+11) If user press export and save contact it is not saving selected contact.			---Open
+12) Import Function not working.								---Open
+
+
+
+Message:
+1) Message not deleted.										--- Open( IF user closd exe and open message will gome again)
+2) Not showing any status after user press send.						--- Open
+3) 10 digit mapping from right to left not implemented.						--- Open
+4) Search option not operational.								--- Fixed
+5) When user open Dialer and swith to Message Tab. Dialer should open inbox.			--- Fixed
+6) When user press send to dialer should open the phonebook with checkbox to select contacts.	--- Open
+7) In inbox/Outbox.... Number not properly allined.						--- Open
+8) Indication of read/Unread message not present.						--- Open
+9) Move/Move All/ Copy/ Copy All-> To application need to rename as Local.			--- Open
+10) Move/Move All/ Copy/ Copy All-> To SIM need to rename as "To SIM/USIM".			--- Open
+11) IF user is in Local inbox/Outbox/etc Move/Move All/ Copy/ Copy All-> Local should be hide.	--- Open
+12) IF user is in SIM/USIM Move/Move All/ Copy/ Copy All->SIM/USIM should be hide.		--- Open
+13) In message detail window not showing Name, Number and receiving date and time.		--- Open( Still not show Name as 10 digit mapping not implemented)
+14) No SMS tone played when received incomming message.						--- Open
+15) IF user press Shift+Delete Number,Time and Content changes to 1,2,3				--- Open
+16) Ctrl+F not operational									--- Fixed
+17) Export ( Ctrl+E) not operational								--- Fixed
+18) Export need to rename as Export selected SMS.						--- Open						
+19) Export All need to rename as Export All SMS							--- Open
+20) After press Export All it ask to open file , it should switch to save.			--- Open( Now it ask for save but after press save file not savd in selectd location)
+21) Not receiving delivery report								--- Open
+
+Setting:-
+Call History:
+1) Missed call also show in Answered Call.									- Open
+2) In call history right click menu not implemented. As user select any number and press right click		- Open
+   dialer should show optin to Call, Send Text Message, Save number,Delete and Clear with 
+   associate short key.
+3) In all call no icon present to distinguest between Answered / Missed / Dialed Call.				- Open
+4) Show Day date time year it should display as day/ date with year/ time.					- Open
+5) 10 digit mapping from right to left not implemented.								- Open
+6) Name should be rename as Name/Number.									- Open
+7) Not showing actual duration in call history,only shows 0.							- Open
+8) In Call type it shows numbers it should show Voice call.							- Open
+
+Data Usage:
+1) Not showing detail of uoload/ download data usage.								- Open
+
+Check Balance:
+1) with post paid if user press check balanck dialer prompt with "retry operation" with OK button.		
+   Dialer shoudl not prompt it should display reply in text box.
+2) IF user insert any shortcode and press Enter Key for PC, It is not entering.User need to press send button.	- Fixed
+
+Network Settings:
+-> Network Mode:
+1) Network mode not implemented for only 2G and 3G.				- OPen( not functioning as per selected mode)
+2) IF user select network mode and press Apply , not showing response message.	- Partially Fixed( Prompt need to rephrase as " Mode changed to ...)
+
+-> Network Selection:
+1) GPRS need to rename as 2G.										- Fixed
+2) IF user press any available network and press Register, not showing any progress bar for registring	- Open( keep showing Progress bar) 
+   Progress and final status.
+
+Operator/Product Information:
+1) Not showing serial number.										-Fixed
+
+ 
+
+
+PIN Operation:
+1) When user insert PIN enable SIM and cancel the PIN POP-UP, Dialer should prompt as " Canceling PIN or PUK	-- OPen( No prompt to enter PIN when PIN is enable and user open exe)
+   varification will disable most network related functions,continue?" with Yes or No button.
+2) IF user cancel PIN prompt and go to setting->Pin operation dialer should not ask to enter PIN untill user press- Open
+   "Verify" button.
+3) IF user cancel PIN prompt and go to setting->PIN operation, disable button not display. Dialer should display -- Open
+   all button in hide state except "Verify".
+4) When PIN is alredy disabled, Verify button should not be enable.						--- Open
+
+Call:
+1) Not showing any pop-up for incomming call.Should show Pop-up with "Call" and "End" button.			--- Open
+2) When incomming call received dialer not switch to Volice call tab.						--- Fixed
+3) Not able to originate call if user insert MDN and press enter key( PC).					--- Open
+4) Not Displaying MDN/ Name in incomming call.									--- Fixed but Name not display as 10 digit mapping not implemented
+5) Not perform any operation if press contact icon.								--- Open
+

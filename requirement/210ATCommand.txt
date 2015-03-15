@@ -1,0 +1,680 @@
+save message : AT+CMGW
+send message : AT+CPMS | AT+CPMS? | +CPMS: "SM",number of message,Total memory,"SM",1,20,"SM",1,20
+read message : AT+CMGR=<index> | AT+CMGR=0 | +CMGR: "STO UNSENT","9223215062",hello
+
+"REC UNREAD" received but unread (+CMGF=1)
+“REC READ" received & read(+CMGF=1)
+"STO UNSENT" saved but unsent (+CMGF=1)
+"STO SENT" saved & sent(+CMGF=1)
+
+AT+CMGR=0
++CMGR: "REC READ","+919810224392",,"11/10/19,18:45:41+22"
+HI
+
+
+receive message : response -> +CMT: "+919223215062",,"11/09/23,13:56:12+22" Text ->MDN, Date,time and text
+
+AT+CNMI=1,2,0,1,0
+OK
+
++CMT: "+919810224392",,"11/10/01,17:35:31+22"
+HI HELLO
+
+
+Delivery report: response -> +CDS and +CDSI -> +CDS:"+919223215062",,"date,time" text
+
+SEND Message :
+
+at+cmgs="9810502133",129
+> hi how are you
+>
+
+at+csmp=49,179,0,0  ---------- open the deivery report 
+
+at+csmp=17,169,0,0  ---------- close the deivery report
+
+
+
+Delivery report status : 
+
+at+csmp?
++CSMP: 17,169,0,0
+
+OK
+
+Delivery report response
+
++CDS: 6,29,"+919810502133",145,"11/10/18,20:04:54+22","11/10/18,20:04:58+22",0
+
+
+at+cnmi=3,0,0,2,0
+
+Delete Message :
+AT+CMGD=<index>
+OK
+
+AT+CMGD=<index>[,<delflag>]
+- delete message specified in <index>  
+0 delete messages assigned in <index> 
+1 delete all messages read
+2 delet all messages read & deleted
+3 delete all messages read, sent & unsent
+4 delete all messages
+if <delflag> = 4, delete all message
+SM
+AT+CMGD=1,4
+OK
+
+
+List all message:
+AT+CMGL="ALL"
+
+deliveryreport incase sim memory selected:
+
++CDSI: "SR",0
+
+
+==============================================================================================
+
+Answer call : ATA
+
+Outgoing Call : 
+
+ATD9223215062;
+
+OK
+
+RINGBACK       | if Call successfully,modem response RINGBACK
+
+RINGBACK
+
+RINGBACK
+
+RINGBACK
+
+VOICE ANSWER    |  if Call is connected ,Modem response VOICE ANSWER
+
+VOICE NO CARRIER  | if Call is disconneced ,Modem response VOICE NO CARRIER
+
+VOICE NO CARRIER
+
+Disconnect Call : 
+
+AT+CHUP
+VOICE NO CARRIER
+
+VOICE NO CARRIER
+
+Incoming Call : 
+
++CLIP: "+919223215062",145,,,,0  | 145->Internation call     
+
+DTMF :               
+
+AT+VTS=1              | if send DTMF 1
+
+Call Waiting : 
+AT+CCWA=<value>   |  value=0 for disable and 1 for enable
+
+
+Call Forwarding : 
+AT+CCFC=<value>   |  value=0 for disable and 1 for enable
+
+
+Voice mail:
+
+
+
+
+=================================================================================================== 
+Phonebook ::
+Save Contact:
+
+AT+CPBS="SM"       | Select memory
+ok
+
+AT+CPBS?            | Check memory
++CPBS: "ME",0,100
+
+AT+CPBW=,"9223215062",,"prabhat"
++CPBW: 1
+
+
+OK
+AT+CPBS?
++CPBS: "ME",1,100
+
+Delete Contact: 
+AT+CPBW=<index>    |  index : record index in storage
+
+Delete all Contact: unsupported
+
+Contact list : 
+AT+CPBR=<index>    |  read one record
+
+AT+CPBR=1,3
++CPBR: 1,"9223215062",129,"Bhupesh"
++CPBR: 2,"55555555",129,"ttttt"
++CPBR: 3,"111111",129,"yyyyyy"
+
+Edit Contact :
+AT+CPBW=2,"11111",129,"sssss"
++CPBW: 2
+
+
+OK
+AT+CPBR=1,2
++CPBR: 1,"9223215062",129,"Bhupesh"
++CPBR: 2,"11111",129,"sssss"
+
+Search Command : 
+
+AT+CPBF="s"
++CPBF: 2,"11111",129,"sssss"
+
+
+===================================================================================================
+
+
+Device name :  Done
+ATI
+Manufacturer: QUALCOMM INCORPORATED
+Model: 19
+Revision: Q6270B-WM220-V1.1    1  [Sep 19 2011 19:13:52]
+IMEI: 910540400103234
++GCAP: +CGSM,+FCLASS,+DS
+ID ERROR!
+
+OK
+
+Application port : missing
+
+Hardware version : Software version :
+
+AT+MVER
+
+
++MVER: HW version: V-MW210_V10,SW version: V-MW210AC_V01
+
+OK
+
+
+firmware version : missing
+
+MSISDN : 
+
+at+cnum
++CNUM: ,"9703016343",129
+
+
+OK
+
+
+Message center number : Done
+
+AT+CSCA?
++CSCA: "+919716099060",145
+
+OK
+
+Pin code status : Done
+
+AT+CPIN?
++CPIN: READY
+
+OK
+
+READY:ME is not pending for any password
+SIM PIN:ME is waiting PIN from SIM
+SIM PUK:ME is waiting for PUK from SIM
+
+Network name : Done
+AT+COPS?
++COPS: 0,0,"Aircel",0
+
+OK
+
+RSSI :
+
+at+hdrssi
++HDRSSI: -84dbm
+
+OK
+
+
+
+CellId : 
+
+AT+CREG=2
+OK
+AT+CREG?
++CREG: 2,1, 6A, 2032
+
+[0] unsolicited result code for disabling network registration 
+1 unsolicited result code+CREG:<n>, <stat> for enabling network registration.
+2 unsolicited result code +CREG:<n>,<stat>[,<lac>,<ci>] for enabling network registration & location
+ AT+CREG=<n>
+ AT+CREG?
++CREG: <n>,<stat>
+OK
+
++CREG: <n>,<stat>,[lac],<ci>
+OK
+0 haven't registered, currently ME hasn't searched a network that need to be registered
+1 Registered, local network
+2 Haven't registered, but ME is searching the network needed to be registered.
+3 registration denied
+4 Unknown
+5 Registered, roaming
+
+
+
+APN :  Done
+AT+CGDCONT?
++CGDCONT: 1,"IP","uninet","0.0.0.0",0,0     |   AT+CGDCONT=1,"IP",  <APN>,"0.0.0.0",0,0
+
+OK
+
+at+cgdcont=1,"IP","aircelgprs.com","0.0.0.0",0,0
+OK
+AT+CGDCONT?
++CGDCONT: 1,"IP","aircelgprs.com","0.0.0.0",0,0
+
+OK
+
+
+
+
+USSD : 
+
+at+cusd=1,"*121#",15
+OK
+
++CUSD: 0,"Press exit now to receive the Main menu and wait for 10 to 15 seconds.
+",15
+
++CUSD: 1,"To change language  press 11
+1 Outstanding
+2 Unbilled
+3 Pay Now
+4 Start a Service
+5 Stop a Service
+6 Bill Summary
+0 Next
+Reply with your choice
+",15
+
+15 : Cell Broadcast Data coding scheme in integer format (default 0)
+1 : Eanable the result code to present on TA.
+
+
+check balance:
+at+cusd=1,"*125#",15
+OK
+
++CUSD: 0,"
+Account balance is Rs.114.15 expiring on  2021/09/18
+",15
+================================================================================================================================================
+Network selection mode : 
+
+at+ZSNT=<mode>,0,0          |  mode =  0 automatic and 1 GSM and 2 HSDPA/UMITS
+OK
+
+Network mode :
+
+AT+COPS=?
++COPS: (2,"Aircel","Aircel","405800",0),(3,"IN-DOLPHIN","DOLPHIN","40468",2),(3,"Vodafone IN","Vodafone","40411",0),(3,"IDEA","IDEA","40404",0),(3,"AirTel","AirTel","40410",0),(1,"","","405913",0),(1,"Reliance","Reliance","40505",0),(1,"Reliance","Reliance","40505",2),,(0,1,2,3,4),(0,1,2)
+
+OK
+AT+COPS=[<mode>[,<format>[,<oper>]]]
+AT+COPS=1,2,<oper>
+i.e. AT+COPS=1,2,40404
+
+<mode>:
+[6:34:00 PM] meto: [0] automatic
+1 Manual
+2 Deregister
+3 Set only <format>
+4 Manual/Automatic
+
+<format>:
+[0] Long alphanumeric format <oper>, max 16 [1] short alphanumeric format, max 8 <oper>
+<oper>:
+String type, <format> indicates if the string is alphanumeric or numeric.
+ +COPS: [(<stat>,long alphanumeric <oper>,short alphanumeric<oper>,numeric <oper>)s][,,(<mode>defined value),(<format>definedvalue)]
+ <stat>:
+0 unknown
+1 Available
+2 Current
+3 Forbidden
+
+manual registration  : AT+COPS=1,0,"AIRCEL",0
+Automatic registration  : AT+COPS=1,0,"IN-DOLPHIN",0
+Automatic registration  : AT+COPS=0,0,"BPL",0
+
++CME ERROR: no network service
+
+
+MCC/MNC/MIN : 
+at+cimi
+404685505832276
+
+OK
+
+
+================================================================================================================================================
+
+Pin Enable : 
+
+AT+CLCK="SC",<mode>,<password>
+[6:43:20 PM] meto: <mode>:
+0 unlock
+1 locking
+2 query status
+i.e. AT+CLCK="SC, 1, "123456"
+Enable PIN, the PIN is 123456
+
+at+clck="sc",0,"0000"
+OK
+
+AT+CPIN=<PUK>,<NEW PIN>
+
++CPIN: SIM PUK
+
+OK
+at+cpin="41085042","0000"
+OK
+at+cpin?
++CPIN: READY
+
+OK
+
+
+
+
+1, Support  AT+CPIN, to check PIN/PUK status and input PIN/PUK.
+
+2, Support  AT+CPWD, to change PIN/PUK.
+
+3, Support  AT+CCFC: to forward incoming call.
+
+4, Support AT+CCWA: lets a new MT call to wait when 8010 is in calling status.
+
+5, Support AT+CSMP, to set delivery report switch
+
+
+
+==================================================================================================
+
+
+
+
+CS network registartion : Missing
+
+PS network registartion : Missing
+
+PS network attachemnt : Missing
+
+notification sms: missing
+
+Modify Pin : missing
+
+pin enable attempts :  
+
+AT+ZPINPUK=?
++ZPINPUK: 3,10
+
+OK
+
+3 means PIN
+10 means PUK
+3 is for PIN
+10 is for PUK
+
+serial number :  
+
+at+cgsn
++CGSN: 000000000000000
+
+OK
+
+
+network selection mode : done
+
+modem port speed issue
+
+display mode (i.e. 3G, Edge and GPRS):
+at+zpas?
++ZPAS: "GSM","CS_PS"
+
+OK
+
+====================================================================================================================================================
+
+enable PIN: AT+CLCK="SC",1,"PIN number"
+disable PIN:AT+CLCK="SC",1,"PIN number"
+
+For example,the PIN of my SIM card is "1234",its PIN status is disable at first.
+AT+CPIN?
++CPIN: READY
+OK
+AT+CLCK="SC",1,"1234"---->enable PIN
+OK
+
+Re-insert MW210 device
+
+AT+CPIN?
++CPIN: SIM PIN----> PIN is locked by AT+CLCK
+OK
+AT+CPIN="1234"
+OK
+AT+CLCK="SC",0,"12345"---> disable PIN
+OK
+
+Re-insert MW210 device
+AT+CPIN?
++CPIN: READY----> PIN is unlocked by AT+CLCK
+OK
+
+
++CME ERROR: incorrect password
+
+
+======================================================
+AT+CPIN="PIN" to verify PIN, such as below example.
+AT+CPIN?
+
++CPIN: SIM PIN
+
+OK
+
+AT+CPIN="0000"
+
++CME ERROR: incorrect password
+[12:18:48 AM] Grace.jiang: sorry, type wrong, disable PIN:AT+CLCK="SC",0,"PIN number"
+[12:24:42 AM] Prabhat srivastava: thats fine we will do work on it and let you know the status
+[12:24:54 AM] Prabhat srivastava: for these At commands
+[12:26:40 AM] Grace.jiang: ok
+[12:27:13 AM] Prabhat srivastava: please check the other issue of AT commands
+[12:27:25 AM] Grace.jiang: what issues?
+[12:27:51 AM] Grace.jiang: GSM 3G EDGE, commands about latched network, right?
+[12:28:00 AM] Prabhat srivastava: yes
+[12:28:05 AM] Prabhat srivastava: serial number
+[12:28:44 AM] Grace.jiang: serail number, I have checked it yet, I will tell you how to use it.
+[12:28:55 AM] Prabhat srivastava: ok thnks
+[12:35:37 AM] Grace.jiang: Check SN: AT+CGSN
+Write SN: AT+WRSN="new SN"
+
+AT+WRSN="12345678910114567865"
+
+For example,the serial number in the device is 1234567890123456789
+
+
+1234567890123456789
+OK
+
+AT+WRSN="12345"
++WRSN: 1---------->1: Successful, 0:fail
+OK
+AT+CGSN----------->Check new SN
+"12345"
+OK
+
+AT+WRSN="12345678901234567890"
++WRSN: 0--------->New SN is 20 bits, max is 19 bit, so fail
+OK
+AT+CGSN
+"12345"
+OK
+====================================================================================================================================================
+
++CME ERROR: incorrect password
+
+at+clck="sc",2
++CLCK: 1
+
+
+
+at+cpin?
++CPIN: SIM PUK
+
+OK
+
+pinunlock PUK: AT+CPIN=09152850,12345
+
+Pin verification : 
+
+at+cpin="1234"
++CPIN: Verified
+
+OK
+
+
+=================================================================================================================================================
+
+Incoming Missed call :
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+
+VOICE NO CARRIER
+
+STOPRING
+
+=================================================================================================================================================
+
+Incomming Received call (disconnected by modem without receive):
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+at+chu
+RING
+
++CLIP: "+919810224392",145,,,,0
+p
+OK
+
+VOICE NO CARRIER
+
+==================================================================================================================================================
+
+On receive disconneced by sender:
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+ata
+VOICE CONNECT
+
+OK
+
+VOICE NO CARRIER
+
+VOICE NO CARRIER
+
+
+======================================================================================
+
+On receive disconneced by receiver:
+
++CLIP: "+919810224392",145,,,,0
+
+RING
+
++CLIP: "+919810224392",145,,,,0
+ata
+VOICE CONNECT
+
+OK
+at+chup
+VOICE NO CARRIER
+
+VOICE NO CARRIER
+
+OK
+
+
+
+==========================================================================================
+
+
+Add Delete contact : 
+
+AT+cpbr=1,100
++CPBR: 1,"56500",129,"Dialer Tune"
++CPBR: 2,"55500",129,"Voice Station"
++CPBR: 3,"121",129,"Customer care"
++CPBR: 4,"1213",129,"Latest Scheme"
++CPBR: 5,"1214",129,"VAS Helpline"
++CPBR: 6,"1909",129,"NDNC Helpline"
++CPBR: 7,"124",129,"RechargeMobile"
++CPBR: 8,"125",129,"Balance Enquir"
++CPBR: 9,"12344",129,"test"
+
+OK
+AT+CPBW=9
++CPBW: 9
+
+
+OK
+AT+cpbr=1,100
++CPBR: 1,"56500",129,"Dialer Tune"
++CPBR: 2,"55500",129,"Voice Station"
++CPBR: 3,"121",129,"Customer care"
++CPBR: 4,"1213",129,"Latest Scheme"
++CPBR: 5,"1214",129,"VAS Helpline"
++CPBR: 6,"1909",129,"NDNC Helpline"
++CPBR: 7,"124",129,"RechargeMobile"
++CPBR: 8,"125",129,"Balance Enquir"
+
+OK
+AT+CPBW=,"9810502133",,"prabhat"
++CPBW: 9
+
+
+OK
+ ================================================================================================
+
+
+
