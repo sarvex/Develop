@@ -36,7 +36,7 @@ struct PortInformation {
 
 #ifdef Q_OS_WIN
 #ifdef QT_GUI_LIB
-#include <QWidget>
+#include <QtWidgets/QWidget>
 class SerialEnumerator;
 
 class SerialRegistrationWidget : public QWidget

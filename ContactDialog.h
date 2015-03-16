@@ -3,13 +3,13 @@
 
 #include "Contact.h"
 
-#include <QDialog>
-#include <QDialogButtonBox>
-#include <QComboBox>
-#include <QFormLayout>
-#include <QLineEdit>
-#include <QRegExpValidator>
-#include <QVBoxLayout>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLineEdit>
+#include <QtGui/QRegExpValidator>
+#include <QtWidgets/QVBoxLayout>
 
 class ContactDialog
 : public QDialog

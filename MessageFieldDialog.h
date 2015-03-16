@@ -1,12 +1,12 @@
 ﻿#ifndef MESSAGE_FIELD_DIALOG
 #define MESSAGE_FIELD_DIALOG
 
-#include <QCheckBox>
-#include <QDialog>
-#include <QDialogButtonBox>
-#include <QListWidget>
-#include <QListWidgetItem>
-#include <QVBoxLayout>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QListWidgetItem>
+#include <QtWidgets/QVBoxLayout>
 
 class MessageFieldDialog : public QDialog {
     Q_OBJECT

@@ -1,14 +1,14 @@
 ﻿#ifndef MESSAGE_SETTING_WIDGET
 #define MESSAGE_SETTING_WIDGET
 
-#include <QCheckBox>
-#include <QDialogButtonBox>
-#include <QGroupBox>
-#include <QLabel>
-#include <QPushButton>
-#include <QRadioButton>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class MessageSettingWidget
 		: public QLabel {

@@ -4,21 +4,21 @@
 #include "Contact.h"
 #include "ContactContentWidget.h"
 
-#include <QAction>
-#include <QIcon>
-#include <QKeySequence>
-#include <QList>
-#include <QMenu>
-#include <QPoint>
-#include <QSplitter>
-#include <QString>
-#include <QStringList>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QToolBar>
-#include <QTreeWidget>
-#include <QTreeWidgetItem>
-#include <QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
+#include <QtGui/QKeySequence>
+#include <QtCore/QList>
+#include <QtWidgets/QMenu>
+#include <QtCore/QPoint>
+#include <QtWidgets/QSplitter>
+#include <QtCore/QString>
+#include <QtCore/QStringList>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableWidgetItem>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QTreeWidgetItem>
+#include <QtWidgets/QVBoxLayout>
 
 class ContactWidget
 : public QWidget

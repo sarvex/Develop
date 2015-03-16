@@ -1,13 +1,13 @@
 ﻿#ifndef POCKET_WIDGET
 #define POCKET_WIDGET
 
-#include <QGridLayout>
-#include <QGroupBox>
-#include <QLabel>
-#include <QLineEdit>
-#include <QString>
-#include <QTextEdit>
-#include <QWidget>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QTCore/QString>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QWidget>
 
 class PocketWidget
 		: public QLabel {

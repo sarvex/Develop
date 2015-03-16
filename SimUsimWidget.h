@@ -1,10 +1,10 @@
 ﻿#ifndef SIM_USIM_WIDGET
 #define SIM_USIM_WIDGET
 
-#include <QFormLayout>
-#include <QLineEdit>
-#include <QString>
-#include <QWidget>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLineEdit>
+#include <QtCore/QString>
+#include <QtWidgets/QWidget>
 
 class SimUsimWidget
 		: public QWidget {

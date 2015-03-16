@@ -3,7 +3,7 @@
 
 #include <QImage>
 #include <QList>
-#include <QPushButton>
+#include <QtWidgets/QPushButton>
 #include <QString>
 #include <QStringList>
 #include <QTime>

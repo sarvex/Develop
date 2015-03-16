@@ -1,7 +1,7 @@
 ﻿#ifndef IMAGE_BUTTON
 #define IMAGE_BUTTON
 
-#include <QPushButton>
+#include <QtWidgets/QPushButton>
 
 class ImageButton : public QPushButton {
 	Q_OBJECT

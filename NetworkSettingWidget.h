@@ -1,10 +1,10 @@
 ﻿#ifndef NETWORK_SETTING_WIDGET
 #define NETWORK_SETTING_WIDGET
 
-#include <QFormLayout>
-#include <QLineEdit>
-#include <QString>
-#include <QWidget>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLineEdit>
+#include <QtCore/QString>
+#include <QtWidgets/QWidget>
 
 class NetworkSettingWidget
 		: public QWidget {

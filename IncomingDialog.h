@@ -4,11 +4,11 @@
 #include <QAudioDeviceInfo>
 #include <QAudioFormat>
 #include <QAudioOutput>
-#include <QDialog>
-#include <QDialogButtonBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
 #include <QFile>
-#include <QLabel>
-#include <QVBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QVBoxLayout>
 
 class IncomingDialog 
 	: public QDialog {

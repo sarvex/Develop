@@ -1,11 +1,11 @@
 ﻿#ifndef NETWORK_MODE_WIDGET
 #define NETWORK_MODE_WIDGET
 
-#include <QComboBox>
-#include <QDialogButtonBox>
-#include <QFormLayout>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class NetworkModeWidget : public QWidget {
 	Q_OBJECT

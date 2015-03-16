@@ -1,4 +1,5 @@
-QT += core gui network sql multimedia
+TEMPLATE += app
+QT += core gui network sql multimedia widgets
 
 CONFIG += qt warn_on
 
@@ -8,7 +9,6 @@ win32 {
 }
 
 TARGET = Aircel
-TEMPLATE = app
 
 RESOURCES += resource/image.qrc \
 	resource/audio.qrc

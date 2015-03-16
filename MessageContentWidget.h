@@ -3,11 +3,11 @@
 
 #include "Message.h"
 
-#include <QGridLayout>
-#include <QLineEdit>
-#include <QLabel>
-#include <QScrollArea>
-#include <QTextEdit>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QTextEdit>
 
 class MessageContentWidget : public QScrollArea {
     Q_OBJECT

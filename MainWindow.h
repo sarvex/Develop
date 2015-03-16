@@ -12,17 +12,17 @@
 #include "TimeLabel.h"
 #include "VoiceWidget.h"
 
-#include <QByteArray>
-#include <QBuffer>
-#include <QHttp>
-#include <QHBoxLayout>
-#include <QLabel>
-#include <QMainWindow>
-#include <QStackedWidget>
+#include <QtCore/QByteArray>
+#include <QtCore/QBuffer>
+#include <QtNetwork>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QStackedWidget>
 #include <QSystemTrayIcon>
-#include <QTranslator>
-#include <QUrl>
-#include <QVBoxLayout>
+#include <QtCore/QTranslator>
+#include <QtCore/QUrl>
+#include <QtWidgets/QVBoxLayout>
 
 class MainWindow
 		: public QMainWindow {

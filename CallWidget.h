@@ -3,18 +3,18 @@
 
 #include "Call.h"
 
-#include <QAction>
-#include <QKeySequence>
-#include <QList>
-#include <QMenu>
-#include <QPoint>
-#include <QSplitter>
-#include <QString>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QTreeWidget>
-#include <QTreeWidgetItem>
-#include <QVBoxLayout>
+#include <QtWidgets/QAction>
+#include <QtGui/QKeySequence>
+#include <QtCore/QList>
+#include <QtWidgets/QMenu>
+#include <QtCore/QPoint>
+#include <QtWidgets/QSplitter>
+#include <QtCore/QString>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableWidgetItem>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QTreeWidgetItem>
+#include <QtWidgets/QVBoxLayout>
 
 class CallWidget
 : public QWidget

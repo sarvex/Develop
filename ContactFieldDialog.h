@@ -1,13 +1,13 @@
 ﻿#ifndef CONTACT_FIELD_DIALOG
 #define CONTACT_FIELD_DIALOG
 
-#include <QCheckBox>
-#include <QDialog>
-#include <QDialogButtonBox>
-#include <QList>
-#include <QListWidget>
-#include <QListWidgetItem>
-#include <QVBoxLayout>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtCore/QList>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QListWidgetItem>
+#include <QtWidgets/QVBoxLayout>
 
 class ContactFieldDialog
 : public QDialog

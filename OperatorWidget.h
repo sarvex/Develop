@@ -6,11 +6,11 @@
 #include "NetworkStatusWidget.h"
 #include "SimUsimWidget.h"
 
-#include <QDialogButtonBox>
-#include <QPushButton>
-#include <QTabWidget>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class OperatorWidget : public QWidget {
 	Q_OBJECT

@@ -1,7 +1,7 @@
 ﻿#ifndef SINGLE_APPLICATION
 #define SINGLE_APPLICATION
 
-#include <QApplication>
+#include <QtWidgets/QApplication>
 #include <QLocalServer>
 #include <QSharedMemory>
 #include <QString>

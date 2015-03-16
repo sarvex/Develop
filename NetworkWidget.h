@@ -4,9 +4,9 @@
 #include "NetworkModeWidget.h"
 #include "NetworkSelectionWidget.h"
 
-#include <QTabWidget>
-#include <QWidget>
-#include <QVBoxLayout>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QVBoxLayout>
 
 class NetworkWidget : public QWidget {
     Q_OBJECT

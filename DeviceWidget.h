@@ -1,10 +1,10 @@
 ﻿#ifndef DEVICE_WIDGET
 #define DEVICE_WIDGET
 
-#include <QFormLayout>
-#include <QLineEdit>
-#include <QString>
-#include <QWidget>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QLineEdit>
+#include <QtCore/QString>
+#include <QtWidgets/QWidget>
 
 class DeviceWidget : public QWidget {
 	Q_OBJECT

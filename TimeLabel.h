@@ -1,9 +1,9 @@
 ﻿#ifndef TIME_LABEL
 #define TIME_LABEL
 
-#include <QLabel>
-#include <QTime>
-#include <QTimer>
+#include <QtWidgets/QLabel>
+#include <QtCore/QTime>
+#include <QtCore/QTimer>
 
 class TimeLabel : public QLabel {
 	Q_OBJECT

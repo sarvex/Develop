@@ -4,11 +4,11 @@
 #include "AnimateButton.h"
 #include "ImageButton.h"
 
-#include <QHBoxLayout>
-#include <QLabel>
-#include <QList>
-#include <QPixmap>
-#include <QVBoxLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtCore/QList>
+#include <QtGui/QPixmap>
+#include <QtWidgets/QVBoxLayout>
 
 class HomeWidget
 	: public QWidget {

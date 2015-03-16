@@ -1,13 +1,13 @@
 ﻿#ifndef USER_MANUAL_WIDGET
 #define USER_MANUAL_WIDGET
 
-#include <QListWidget>
-#include <QListWidgetItem>
-#include <QSplitter>
-#include <QStringList>
-#include <QTextEdit>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QListWidgetItem>
+#include <QtWidgets/QSplitter>
+#include <QtCore/QStringList>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class UserManualWidget
 		: public QWidget {

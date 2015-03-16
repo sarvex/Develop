@@ -4,19 +4,19 @@
 #include "Call.h"
 #include "ImageButton.h"
 
-#include <QIcon>
-#include <QKeyEvent>
-#include <QLabel>
-#include <QLineEdit>
-#include <QList>
-#include <QPoint>
-#include <QSlider>
-#include <QString>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QTime>
-#include <QTimer>
-#include <QWidget>
+#include <QtGui/QIcon>
+#include <QtGui/QKeyEvent>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtCore/QList>
+#include <QtCore/QPoint>
+#include <QtWidgets/QSlider>
+#include <QtCore/QString>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableWidgetItem>
+#include <QtCore/QTime>
+#include <QtCore/QTimer>
+#include <QtWidgets/QWidget>
 
 class VoiceWidget
 		: public QWidget {

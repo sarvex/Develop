@@ -3,9 +3,9 @@
 
 #include "Contact.h"
 
-#include <QGridLayout>
-#include <QLabel>
-#include <QLineEdit>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 
 class ContactContentWidget
 : public QWidget

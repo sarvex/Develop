@@ -12,12 +12,12 @@
 #include "PocketWidget.h"
 #include "UserManualWidget.h"
 
-#include <QListWidget>
-#include <QSplitter>
-#include <QStackedWidget>
-#include <QString>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QSplitter>
+#include <QtWidgets/QStackedWidget>
+#include <QtCore/QString>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 class SettingWidget
 		: public QWidget {

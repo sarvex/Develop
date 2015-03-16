@@ -3,12 +3,12 @@
 
 #include "Contact.h"
 
-#include <QDialog>
-#include <QDialogButtonBox>
-#include <QListWidget>
-#include <QListWidgetItem>
-#include <QString>
-#include <QVBoxLayout>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QListWidgetItem>
+#include <QtCore/QString>
+#include <QtWidgets/QVBoxLayout>
 
 class ContactSelectDialog
         : public QDialog {

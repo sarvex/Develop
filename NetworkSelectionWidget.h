@@ -1,18 +1,18 @@
 ﻿#ifndef NETWORK_SELECTION_WIDGET
 #define NETWORK_SELECTION_WIDGET
 
-#include <QGridLayout>
-#include <QLabel>
-#include <QMessageBox>
-#include <QProgressBar>
-#include <QPushButton>
-#include <QRadioButton>
-#include <QSplitter>
-#include <QString>
-#include <QStringList>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QTextEdit>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QProgressBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QSplitter>
+#include <QtCore/QString>
+#include <QtCore/QStringList>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableWidgetItem>
+#include <QtWidgets/QTextEdit>
 
 class NetworkSelectionWidget
 	: public QWidget {

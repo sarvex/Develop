@@ -1,12 +1,12 @@
 ﻿#ifndef CHECK_BALANCE_WIDGET
 #define CHECK_BALANCE_WIDGET
 
-#include <QGridLayout>
-#include <QLabel>
-#include <QLineEdit>
-#include <QPushButton>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QString>
-#include <QTextEdit>
+#include <QtWidgets/QTextEdit>
 
 class CheckBalanceWidget
 : public QLabel

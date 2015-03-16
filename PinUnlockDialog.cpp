@@ -1,4 +1,4 @@
-﻿#include <QMessageBox>
+﻿#include <QtWidgets/QMessageBox>
 
 #include "At.h"
 #include "DeamonInterface.h"

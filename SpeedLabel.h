@@ -1,7 +1,7 @@
 ﻿#ifndef SPEED_LABEL
 #define SPEED_LABEL
 
-#include <QLabel>
+#include <QtWidgets/QLabel>
 
 class SpeedLabel
 		: public QLabel{

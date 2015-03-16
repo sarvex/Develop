@@ -4,17 +4,17 @@
 #include "Message.h"
 #include "MessageContentWidget.h"
 
-#include <QAction>
-#include <QMenu>
-#include <QPoint>
-#include <QSplitter>
-#include <QTableWidget>
-#include <QTextEdit>
-#include <QToolBar>
-#include <QTreeWidget>
-#include <QTreeWidgetItem>
-#include <QVBoxLayout>
-#include <QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QMenu>
+#include <QtCore/QPoint>
+#include <QtWidgets/QSplitter>
+#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QTreeWidget>
+#include <QtWidgets/QTreeWidgetItem>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 
 class MessageWidget : public QWidget {

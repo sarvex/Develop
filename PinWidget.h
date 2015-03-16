@@ -1,11 +1,11 @@
 ﻿#ifndef PIN_WIDGET
 #define PIN_WIDGET
 
-#include <QDialogButtonBox>
-#include <QGroupBox>
-#include <QLabel>
-#include <QPushButton>
-#include <QVBoxLayout>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 
 class PinWidget
 		: public QLabel {
